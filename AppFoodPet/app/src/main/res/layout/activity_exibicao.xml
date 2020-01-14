@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    tools:context=".ExibicaoActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="411dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fundoprincipal" />
+
+    <EditText
+        android:id="@+id/editSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/txt_password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/editConfirmeSenha"
+        app:layout_constraintEnd_toEndOf="@+id/editConfirmeSenha"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editConfirmeSenha" />
+
+    <EditText
+        android:id="@+id/editConfirmeSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/txt_confirmpassword"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrar"
+        app:layout_constraintEnd_toEndOf="@+id/btnCadastrar"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/btnCadastrar" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:background="@color/colorWhite"
+        android:text="Cadastrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Mais vida para seu Pet"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/editNome"
+        app:layout_constraintEnd_toEndOf="@+id/editNome"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="@+id/editNome" />
+
+    <EditText
+        android:id="@+id/editNome"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/text_nome"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editEmail"
+        app:layout_constraintEnd_toEndOf="@+id/editEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editEmail" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/text_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/editCPF"
+        app:layout_constraintEnd_toEndOf="@+id/editCPF"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editCPF" />
+
+    <com.santalu.maskedittext.MaskEditText
+        android:id="@+id/editPhone"
+        android:layout_width="214dp"
+        android:layout_height="42dp"
+        android:hint="Telefone"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/editSenha"
+        app:layout_constraintEnd_toEndOf="@+id/editSenha"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editSenha"
+        app:met_mask="(##)#####-####" />
+
+    <EditText
+        android:id="@+id/editCPF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/text_cpf"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editPhone"
+        app:layout_constraintEnd_toEndOf="@+id/editPhone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editPhone" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

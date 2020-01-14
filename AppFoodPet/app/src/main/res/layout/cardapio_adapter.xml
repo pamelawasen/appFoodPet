@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/card_cardapio"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="false"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="6dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cardNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp" />
+
+        <FrameLayout
+            android:layout_width="252dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/cardImg"
+                android:layout_width="234dp"
+                android:layout_height="107dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp" />
+
+            <ProgressBar
+                android:id="@+id/cardProgress"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginRight="6dp"
+                android:background="@color/colorBlack"
+                android:visibility="invisible" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:text="Quantidade" />
+
+            <EditText
+                android:id="@+id/editQtd"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btnComprar"
+                android:layout_width="100dp"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorOrange"
+                android:text="Comprar"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
